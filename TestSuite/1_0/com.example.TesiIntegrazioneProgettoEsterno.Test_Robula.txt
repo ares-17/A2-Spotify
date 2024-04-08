@@ -1,37 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: com.example.TesiIntegrazioneProgettoEsterno.Test_Robula
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.381 s <<< FAILURE! - in com.example.TesiIntegrazioneProgettoEsterno.Test_Robula
-test_loc_Robula_release_1_1(com.example.TesiIntegrazioneProgettoEsterno.Test_Robula)  Time elapsed: 0.381 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.406 s <<< FAILURE! - in com.example.TesiIntegrazioneProgettoEsterno.Test_Robula
+test_loc_Robula_release_1_1(com.example.TesiIntegrazioneProgettoEsterno.Test_Robula)  Time elapsed: 0.405 s  <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 session not created: This version of ChromeDriver only supports Chrome version 114
 Current browser version is 123.0.6312.105 with binary path /usr/bin/google-chrome
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'fv-az775-183', ip: '10.1.0.179', os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-1017-azure', java.version: '11.0.22'
+System info: host: 'fv-az711-63', ip: '10.1.0.222', os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-1017-azure', java.version: '11.0.22'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: #0 0x55f8df0574e3 <unknown>
-#1 0x55f8ded86c76 <unknown>
-#2 0x55f8dedb404a <unknown>
-#3 0x55f8dedaf4a1 <unknown>
-#4 0x55f8dedac029 <unknown>
-#5 0x55f8dedeaccc <unknown>
-#6 0x55f8dedea47f <unknown>
-#7 0x55f8dede1de3 <unknown>
-#8 0x55f8dedb72dd <unknown>
-#9 0x55f8dedb834e <unknown>
-#10 0x55f8df0173e4 <unknown>
-#11 0x55f8df01b3d7 <unknown>
-#12 0x55f8df025b20 <unknown>
-#13 0x55f8df01c023 <unknown>
-#14 0x55f8defea1aa <unknown>
-#15 0x55f8df0406b8 <unknown>
-#16 0x55f8df040847 <unknown>
-#17 0x55f8df050243 <unknown>
-#18 0x7f7a43a94ac3 <unknown>
+remote stacktrace: #0 0x55a38cb8e4e3 <unknown>
+#1 0x55a38c8bdc76 <unknown>
+#2 0x55a38c8eb04a <unknown>
+#3 0x55a38c8e64a1 <unknown>
+#4 0x55a38c8e3029 <unknown>
+#5 0x55a38c921ccc <unknown>
+#6 0x55a38c92147f <unknown>
+#7 0x55a38c918de3 <unknown>
+#8 0x55a38c8ee2dd <unknown>
+#9 0x55a38c8ef34e <unknown>
+#10 0x55a38cb4e3e4 <unknown>
+#11 0x55a38cb523d7 <unknown>
+#12 0x55a38cb5cb20 <unknown>
+#13 0x55a38cb53023 <unknown>
+#14 0x55a38cb211aa <unknown>
+#15 0x55a38cb776b8 <unknown>
+#16 0x55a38cb77847 <unknown>
+#17 0x55a38cb87243 <unknown>
+#18 0x7f9ea0e94ac3 <unknown>
 
 	at com.example.TesiIntegrazioneProgettoEsterno.Test_Robula.setUp(Test_Robula.java:46)
 
-test_loc_Robula_release_1_1(com.example.TesiIntegrazioneProgettoEsterno.Test_Robula)  Time elapsed: 0.381 s  <<< ERROR!
+test_loc_Robula_release_1_1(com.example.TesiIntegrazioneProgettoEsterno.Test_Robula)  Time elapsed: 0.405 s  <<< ERROR!
 java.lang.NullPointerException
 	at com.example.TesiIntegrazioneProgettoEsterno.Test_Robula.tearDown(Test_Robula.java:123)
 

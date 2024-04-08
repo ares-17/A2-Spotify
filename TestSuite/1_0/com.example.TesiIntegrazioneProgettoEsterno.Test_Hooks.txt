@@ -1,37 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.403 s <<< FAILURE! - in com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks
-test_loc_Hooks_release_1_1(com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks)  Time elapsed: 2.379 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.379 s <<< FAILURE! - in com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks
+test_loc_Hooks_release_1_1(com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks)  Time elapsed: 2.348 s  <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 session not created: This version of ChromeDriver only supports Chrome version 114
 Current browser version is 123.0.6312.105 with binary path /usr/bin/google-chrome
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'fv-az775-183', ip: '10.1.0.179', os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-1017-azure', java.version: '11.0.22'
+System info: host: 'fv-az711-63', ip: '10.1.0.222', os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-1017-azure', java.version: '11.0.22'
 Driver info: driver.version: ChromeDriver
-remote stacktrace: #0 0x56084d5b84e3 <unknown>
-#1 0x56084d2e7c76 <unknown>
-#2 0x56084d31504a <unknown>
-#3 0x56084d3104a1 <unknown>
-#4 0x56084d30d029 <unknown>
-#5 0x56084d34bccc <unknown>
-#6 0x56084d34b47f <unknown>
-#7 0x56084d342de3 <unknown>
-#8 0x56084d3182dd <unknown>
-#9 0x56084d31934e <unknown>
-#10 0x56084d5783e4 <unknown>
-#11 0x56084d57c3d7 <unknown>
-#12 0x56084d586b20 <unknown>
-#13 0x56084d57d023 <unknown>
-#14 0x56084d54b1aa <unknown>
-#15 0x56084d5a16b8 <unknown>
-#16 0x56084d5a1847 <unknown>
-#17 0x56084d5b1243 <unknown>
-#18 0x7f03b2094ac3 <unknown>
+remote stacktrace: #0 0x5620fc2d94e3 <unknown>
+#1 0x5620fc008c76 <unknown>
+#2 0x5620fc03604a <unknown>
+#3 0x5620fc0314a1 <unknown>
+#4 0x5620fc02e029 <unknown>
+#5 0x5620fc06cccc <unknown>
+#6 0x5620fc06c47f <unknown>
+#7 0x5620fc063de3 <unknown>
+#8 0x5620fc0392dd <unknown>
+#9 0x5620fc03a34e <unknown>
+#10 0x5620fc2993e4 <unknown>
+#11 0x5620fc29d3d7 <unknown>
+#12 0x5620fc2a7b20 <unknown>
+#13 0x5620fc29e023 <unknown>
+#14 0x5620fc26c1aa <unknown>
+#15 0x5620fc2c26b8 <unknown>
+#16 0x5620fc2c2847 <unknown>
+#17 0x5620fc2d2243 <unknown>
+#18 0x7f34d2094ac3 <unknown>
 
 	at com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks.setUp(Test_Hooks.java:45)
 
-test_loc_Hooks_release_1_1(com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks)  Time elapsed: 2.379 s  <<< ERROR!
+test_loc_Hooks_release_1_1(com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks)  Time elapsed: 2.349 s  <<< ERROR!
 java.lang.NullPointerException
 	at com.example.TesiIntegrazioneProgettoEsterno.Test_Hooks.tearDown(Test_Hooks.java:120)
 
