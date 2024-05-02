@@ -5,8 +5,8 @@ name: Github Actions - mainOnPush
 # Controls when the workflow will run
 on:
   push:
-    branches: 
-      - '**'      # matches every branches
+    branches-ignore:
+      - 'v_*'    # exclude every test branches
 
 
  
