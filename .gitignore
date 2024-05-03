@@ -39,3 +39,6 @@ automated-test/repo
 
 ## automatic screenshot for failed tests
 *_screenshot.png
+
+## to execute local unisciReportExcel
+/unisciReportExcel

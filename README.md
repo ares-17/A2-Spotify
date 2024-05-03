@@ -1,4 +1,4 @@
-# Fork A2-Angular Spotify test
+# Fork A2-Angular Spotify
 
 [Original README](https://github.com/reverse-unina/A1-ContactList/blob/master/readme.txt)
 
@@ -22,8 +22,7 @@ Se si intende eseguire un file di test per tutti i tag e confrontarne le proprie
 ## Esecuzione test in locale
 Nel caso in cui i test non vadano a buon fine testarli allora in locale eseguendo **npm run start** in _insert-here-your-web-app/angular-spotify-main/angular-spotify-main_ ed eseguire la funzionalità di debug integrata nell'IDE.
 
-<details>
-<summary>Cattura screenshot in caso di errore</summary>
+### Cattura screenshot in caso di errore
 
 ```java
 @Test
@@ -45,4 +44,9 @@ Nel caso in cui i test non vadano a buon fine testarli allora in locale eseguend
     }
 }
 ```
-</details>
+### Generazione report finale in locale
+Per generare un unico report (in locale non utilizzando l'action su Github) a partire dai numeri file .xls generati è necessario:
+- Aver installato una versione minima di Java 8 col _JAVA_HOME_ configurato
+- Estrarre il contenuto di _unisciReportExcel_
+- Posizionare i file .xls in _unisciReportExcel/surefire_reports_ eliminando altri eventuali file presenti
+- posizionarsi con il terminale nella cartella _target_ ed eseguire `java -jar unisciReportExcel-0.0.1-jarReportTest.jar ./surefire-reports reportComplessivo`
