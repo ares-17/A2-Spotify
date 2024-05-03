@@ -100,7 +100,7 @@ private static StringBuffer verificationErrors = new StringBuffer();
 	//System.out.println(s);
     driver.findElement(By.xpath("//ul[1][@class='nav-bar-top']//*[@x448627084077-x-test-hook-4][3]//*[@x448627084077-x-test-hook-5]")).click();
     Thread.sleep(500);
-	driver.findElement(By.xpath("//a[1][normalize-space()='Create per te']//*[@x448576661302-x-test-hook-2]")).click();
+	driver.findElement(By.xpath("//a[1][normalize-space()='Made For You']//*[@x448576661302-x-test-hook-2]")).click();
     Thread.sleep(500);
 	driver.findElement(By.xpath("//a[1][@class='flex flex-col flex-1']//*[@x448609128836-x-test-hook-3]")).click();
     Thread.sleep(500);
