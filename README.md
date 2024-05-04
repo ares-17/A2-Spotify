@@ -1,28 +1,41 @@
-# Fork A2-Angular Spotify
+# Fork A1-ContactList
 
-[Original README](https://github.com/reverse-unina/A1-ContactList/blob/master/readme.txt)
+[Original README](https://github.com/reverse-unina/A1-ContactList)
 
 ## Configurazione fork
-La creazione di un fork del repository originale risulta tediosa e non pronta all'uso a causa della presenza di referenze a path assoluti o nome del repository.
+La creazione di un fork del repository di origine risulta un'operazione lunga e complessa se non si è a conoscenza a priori delle modifiche da apportare.
 
-Per avere un fork _pronto all'uso_ seguire i passaggi che compongono _execute_all_tests.py_, descritti in [Locators-automated-tests](https://github.com/ares-17/locators-automated-tests).
+Per staccare un fork _pronto all'uso_ da [qui](https://github.com/reverse-unina/A1-ContactList) seguire i passaggi che compongono una singola iterazione dello script _execute_all_tests.py_ in [Locators-automated-tests](https://github.com/ares-17/locators-automated-tests).
 
 ## Locators-automated-tests
-Di default per eseguire un test occorre:
-- creare il test con Katalon Recorder ed esportarlo in _project-test-headless/src/test/java/com/example/TesiIntegrazioneProgettoEsterno_ sottoforma di junit
+L'ambiente predisposto dal repository primario prevede l'utilizzo di 3 file .yml come azioni Github per semplificare il processo di valutazione di un locatore.
+
+Per valutare le performance di un test Katalon in junit occorre:
+- creare il test con Katalon Recorder ed esportarlo in _project-test-headless/src/test/java/com/example/TesiIntegrazioneProgettoEsterno_ come junit
 - aggiungere eventuali modifiche al frontend Angular per testare le proprietà del test
-- creare una commit e push per eseguire le azioni di Github
+- eseguire una commit e push per eseguire _mainOnPush.yml_ che inserisce gli hooks nelle pagine HTML e corregge gli import dei file di test
 - creare una release a seguito dell'esecuzione delle azioni prima menzionate
-- scaricare il file zip della release ed ispezionare la cartella _TestSuite_
+- scaricare il file zip della release ed ispezionare manualmente la cartella _TestSuite_
+- spostare il report _.xls_ in _Report-Separati/_ dove l'azione _generaReportFinale.yml_ a seguito di una push su _master_ unisce i report in un unico file
 
-Il repository **Locators-automated-tests** prima menzionato, automatizza il processo descritto utilizzando dei tag presenti nel repository originario e che identificano delle modifiche apportate al FE Angular per testare i file junit di test.
+Il repository **Locators-automated-tests** automatizza il processo considerando dei tag di riferimento già presenti nel repository primario e che identificano dei test HTML con i quali confrontare le performance dei locatori.
 
-Se si intende eseguire un file di test per tutti i tag e confrontarne le proprietà, basta semplicemente clonare il repository dei test automatici in _automated-test_ come quanto indicato nel proprio README.
+### Integrazione repository
+Il presente repository costituisce una testimonianza su come integrare il repository dei test automatici in un qualsiasi fork.
+
+Nei seguenti passaggi alcuni nomenclature possono esssere modificate a piacere ma per una integrazione semplificata si consiglia di rispecchiare l'esempio.
+
+Passaggi:
+1. creare la cartella _automated\_test_ nel fork
+2. clonare il repository degli script come quando esemplificato nel [README](https://github.com/ares-17/locators-automated-tests)
+3. creare la cartella _automated\_test/test\_cases_ nella quale inserire i file junit da valutare
+4. creare il file _automated\_test/config.ini_ come descritto nel README
 
 ## Esecuzione test in locale
-Nel caso in cui i test non vadano a buon fine testarli allora in locale eseguendo **npm run start** in _insert-here-your-web-app/angular-spotify-main/angular-spotify-main_ ed eseguire la funzionalità di debug integrata nell'IDE.
+Per eseguire in locale i test junit occorre eseguire **npm run start** in _insert-here-your-web-app/angular-spotify-main/angular-spotify-main_ ed eseguire la funzionalità di debug integrata nell'IDE.
 
 ### Cattura screenshot in caso di errore
+Con la funzione di cattura screenshot di semplifica il processo di debugging dei test ispezionando visivamente la pagina sulla quale di ottiene la prima eccezione.
 
 ```java
 @Test
@@ -50,3 +63,5 @@ Per generare un unico report (in locale non utilizzando l'action su Github) a pa
 - Estrarre il contenuto di _unisciReportExcel_
 - Posizionare i file .xls in _unisciReportExcel/surefire_reports_ eliminando altri eventuali file presenti
 - posizionarsi con il terminale nella cartella _target_ ed eseguire `java -jar unisciReportExcel-0.0.1-jarReportTest.jar ./surefire-reports reportComplessivo`
+
+Anche questo passaggio è semplificato da **Locators-automated-tests**.
