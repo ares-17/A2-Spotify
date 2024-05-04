@@ -1,11 +1,11 @@
-# Fork A1-ContactList
+# Fork A2-Spotify
 
-[Original README](https://github.com/reverse-unina/A1-ContactList)
+[Original README](https://github.com/reverse-unina/A2-Spotify)
 
 ## Configurazione fork
 La creazione di un fork del repository di origine risulta un'operazione lunga e complessa se non si è a conoscenza a priori delle modifiche da apportare.
 
-Per staccare un fork _pronto all'uso_ da [qui](https://github.com/reverse-unina/A1-ContactList) seguire i passaggi che compongono una singola iterazione dello script _execute_all_tests.py_ in [Locators-automated-tests](https://github.com/ares-17/locators-automated-tests).
+Per staccare un fork _pronto all'uso_ da [qui](https://github.com/reverse-unina/A2-Spotify) seguire i passaggi che compongono una singola iterazione dello script _execute_all_tests.py_ in [Locators-automated-tests](https://github.com/ares-17/locators-automated-tests).
 
 ## Locators-automated-tests
 L'ambiente predisposto dal repository primario prevede l'utilizzo di 3 file .yml come azioni Github per semplificare il processo di valutazione di un locatore.
