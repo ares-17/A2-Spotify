@@ -35,7 +35,6 @@ node_modules/
 
 # automated-tests
 automated-test/release_download
-automated-test/repo
 
 ## automatic screenshot for failed tests
 *_screenshot.png
